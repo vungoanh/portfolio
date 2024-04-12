@@ -13,11 +13,11 @@ export const links = [
     hash: "#home",
   },
   {
-    name: "About",
+    name: "Sobre",
     hash: "#about",
   },
   {
-    name: "Projects",
+    name: "Projetos",
     hash: "#projects",
   },
   {
@@ -25,37 +25,37 @@ export const links = [
     hash: "#skills",
   },
   {
-    name: "Experience",
+    name: "Experiência",
     hash: "#experience",
   },
   {
-    name: "Contact",
+    name: "Contato",
     hash: "#contact",
   },
 ] as const;
 
 export const experiencesData = [
   {
-    title: "Intern in Software Development",
+    title: "Estagiário em Desenvolvimento de Software",
     location: "Juiz de Fora, MG",
     description:
-      "I was an intern for Thomson Reuters for almost 2 years, working with .NET, C#, and SQL Server. There I worked at solving bugs reported by customers and developing new features in the system.",
+      "Fui estagiário na Thomson Reuters por quase 2 anos, trabalhando com .NET, C# e SQL Server. Lá, eu trabalhei na resolução de bugs relatados pelos clientes e no desenvolvimento de novos recursos no sistema.",
     icon: React.createElement(CgWorkAlt),
     date: "2021 - 2023",
   },
   {
-    title: "Bachelor of Computer Science",
+    title: "Bacharel em Ciência da Computação",
     location: "Universidade Federal de Juiz de Fora, MG",
     description:
-      "Recent graduate in Computer Science.",
+      "Graduado recentemente em Ciência da Computação.",
     icon: React.createElement(LuGraduationCap),
     date: "2018 - 2023",
   },
   {
-    title: "Associate Degree in IT",
+    title: "Curso Técnico em Informática",
     location: "Instituto Federal de Educação, Ciência e Tecnologia do Sudeste de Minas Gerais - Campus Juiz de Fora, MG",
     description:
-      "I got an associate degree in IT while in high school.",
+      "Obtive um curso técnico em Informática durante o ensino médio.",
     icon: React.createElement(LuGraduationCap),
     date: "2015 - 2017",
   },
@@ -65,15 +65,15 @@ export const projectsData = [
   {
     title: "Posts & Comments API",
     description:
-      "A RESTful API with endpoints for posts creation, update, delete and listing. As well as comments creation and deletion on posts.",
+      "Uma API RESTful com endpoints para criação, atualização, exclusão e listagem de posts. Também permite a criação e exclusão de comentários nos posts.",
     tags: ["Node.js", "TypeScript", "Express", "MongoDB", "Docker"],
     imageUrl: postsCommentsApi,
-    url: "https://github.com/caiosdeo/posts-comments-api"
+    url: "https://github.com/"
   },
   {
     title: "Taking notes",
     description:
-      "A public web app for creating documents. It uses a notion-like editor and you can publish documents on the web.",
+      "Um aplicativo web para criar documentos. Ele usa um editor semelhante ao Notion e você pode publicar documentos na web.",
     tags: ["React", "Next.js", "Convex", "Tailwind"],
     imageUrl: takingnotesImg,
     url: "https://takingnotes.vercel.app/"
@@ -81,41 +81,18 @@ export const projectsData = [
   {
     title: "E-Commerce Admin",
     description:
-      "This admin project is capable of managing categories, sizes, colors, and products, as well as controlling multiple stores and generating separate API routes for each.",
+      "O projeto de administrador é capaz de gerenciar categorias, tamanhos, cores e produtos, além de controlar várias lojas e gerar rotas de API separadas para cada uma.",
     tags: ["React", "Next.js", "Prisma", "Postgres", "Tailwind"],
     imageUrl: ecommerceadminImg,
-    url: "https://github.com/ecommerce-admin"
+    url: "https://github.com"
   },
   {
     title: "PC Build Monitor",
     description:
-      "A web scraping script that get data from a pc builder website. It uses Google API to store the price of each pc part in a Google Spreadsheet.",
+      "Um script de web scraping que obtém dados de um site de montagem de PC. Ele usa a API do Google para armazenar o preço de cada parte do PC em uma Planilha do Google.",
     tags: ["Python", "Beautiful Soup", "Google API", "Scraping"],
     imageUrl: pcbuildmonitorImg,
-    url: "https://github.com/pc-build-monitor"
+    url: "https://github.com/"
   },
 
-] as const;
-
-export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "C#",
-  ".NET",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "Convex",
-  "SQL Server",
-  "PostgreSQL",
-  "Python",
-  "Framer Motion",
-  "Scraping",
 ] as const;

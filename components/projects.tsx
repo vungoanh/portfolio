@@ -1,19 +1,36 @@
 "use client";
 
 import React from "react";
-import SectionHeading from "./section-heading";
-import { projectsData } from "@/lib/data";
-import Project from "./project";
-import { useSectionInView } from "@/lib/hooks";
+import { useTranslations } from "next-intl";
 
-export default function Projects() {
-  const { ref } = useSectionInView("Projects", 0.5);
+import { Project as ProjectType } from "@/types";
+import { useSectionInView } from "@/hooks/use-section-in-view";
+
+import SectionHeading from "@/components/section-heading";
+import Project from "@/components/project";
+
+export default function Projects({
+  locale
+}: {
+  locale: string
+}) {
+  const { ref } = useSectionInView(locale === 'vn' ? "Projetos" : "Projects");
+
+  const t = useTranslations('ProjectsSection');
+
+  let projectsData;
+
+  if (locale === 'vn') {
+    projectsData = require("@/lib/data-vn").projectsData;
+  } else  {
+    projectsData = require("@/lib/data").projectsData;
+  }
 
   return (
     <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
-      <SectionHeading>My projects</SectionHeading>
+      <SectionHeading>{t('heading')}</SectionHeading>
       <div>
-        {projectsData.map((project, index) => (
+        {projectsData.map((project: ProjectType, index: number) => (
           <React.Fragment key={index}>
             <Project {...project} />
           </React.Fragment>

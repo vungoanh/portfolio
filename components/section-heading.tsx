@@ -1,6 +1,6 @@
 import React from "react";
 
-type SectionHeadingProps = {
+interface SectionHeadingProps {
   children: React.ReactNode;
 };
 

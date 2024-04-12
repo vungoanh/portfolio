@@ -1,18 +1,35 @@
 "use client";
 
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
+
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
-import { useSectionInView } from "@/lib/hooks";
-import { useActiveSectionContext } from "@/context/active-section-context";
 
-export default function Intro() {
+import { useSectionInView } from "@/hooks/use-section-in-view";
+import { useActiveSectionContext } from "@/hooks/use-active-section-context";
+
+export default function Intro({
+  locale
+}: {
+  locale: string
+}) {
+
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
+  const t = useTranslations('IntroSection');
+
+  const CVLanguage = locale === 'en' ? "/CV.pdf" : "/CV-VN.pdf";
+
+  const handleContactClick = () => {
+    setActiveSection("Contact");
+    setTimeOfLastClick(Date.now());
+  }
 
   return (
     <section
@@ -27,7 +44,7 @@ export default function Intro() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{
               type: "tween",
-              duration: 0.2,
+              duration: 0.1,
             }}
           >
             <Image
@@ -40,9 +57,7 @@ export default function Intro() {
               className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
-
           <motion.span
-            className="absolute bottom-0 right-0 text-4xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -51,6 +66,7 @@ export default function Intro() {
               delay: 0.1,
               duration: 0.7,
             }}
+            className="absolute bottom-0 right-0 text-4xl"
           >
             👋
           </motion.span>
@@ -62,11 +78,14 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Vu Ngo.</span> I'm a{" "}
-        <span className="font-bold">front-end developer</span> with{" "}
-        <span className="font-bold">2 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        {t.rich('intro', {
+          bold: (chunks) => (
+            <span className='font-bold'>{chunks}</span>
+          ),
+          italic: (chunks) => (
+            <span className='italic'>{chunks}</span>
+          )
+        })}
       </motion.h1>
 
       <motion.div
@@ -77,38 +96,35 @@ export default function Intro() {
           delay: 0.1,
         }}
       >
+        {/* Contact Section */}
         <Link
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-          onClick={() => {
-            setActiveSection("Contact");
-            setTimeOfLastClick(Date.now());
-          }}
+          onClick={handleContactClick}
         >
-          Contact me here{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+          {t('contactMeHere')}
+          <BsArrowRight className="opacity-70 group-hover:translate-x-1.5 transition" />
         </Link>
-
+        {/* Curriculum */}
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/CV.pdf"
+          href={CVLanguage}
           download
         >
-          Download CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          {t('downloadCV')} <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
-
+        {/* LinkedIn */}
         <a
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/"
           target="_blank"
         >
           <BsLinkedin />
         </a>
-
+        {/* GitHub */}
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com"
+          href="https://github.com/vungoanh"
           target="_blank"
         >
           <FaGithubSquare />

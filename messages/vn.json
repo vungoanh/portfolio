@@ -1,0 +1,42 @@
+{
+  "LocaleLayout": {
+    "title": "Vu Ngo | Portfolio Pessoal"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, en {🇺🇸 English} vn {🇧🇷 Português} other {Unknown}}"
+  },
+  "Footer": {
+    "copyright": "<small>© {year} Vu Ngo. Todos direitos reservados.</small>",
+    "about": "<bold>Sobre este website:</bold> feito com Next.js, TypeScript, Tailwind CSS, Framer Motion, React Email & Resend, hospedagem Vercel."
+  },
+  "SubmitButton": {
+    "submit": "Enviar"
+  },
+  "IntroSection": {
+    "intro": "<bold>Olá, eu sou o Vu Ngo.</bold> Sou um desenvolvedor <bold>full-stack</bold> júnior com <bold>2 anos</bold> de experiência. Eu gosto de desenvolver <italic>sites & apps</italic>.",
+    "contactMeHere": "Entre em contato aqui",
+    "downloadCV": "Baixar CV"
+  },
+  "AboutSection": {
+    "heading": "Sobre mim",
+    "aboutMe": "Recentemente me formei em <medium>Ciência da Computação</medium> com conhecimentos em linguagens de programação, bancos de dados e desenvolvimento web. <underline>Tenho experiência em ambiente de manutenção e suporte</underline>, trabalhando na resolução de bugs de sistema. <underline>Habilidade para resolver problemas e aprender rápido</underline>. Atualmente, tenho estudado e desenvolvido <medium>projetos Full-stack</medium> com diversas tecnologias como <medium>React, Next.js, Typescript e Tailwind</medium>. Estou procurando uma <medium>posição em tempo integral</medium> como desenvolvedor de software.",
+    "hobbies": "<italic>Quando não estou codificando</italic>, gosto de jogar videogames, assistir filmes e ler. Também gosto de <bold>cozinhar</bold>. Atualmente, meus pratos principais são <bold>pizzas e um bom churrasco</bold>. Também gosto de ir à academia para me manter ativo."
+  },
+  "ProjectsSection": {
+    "heading": "Meus projetos"
+  },
+  "SkillsSection": {
+    "heading": "Minhas habilidades"
+  },
+  "ExperienceSection": {
+    "heading": "Minha experiência"
+  },
+  "ContactSection": {
+    "heading": "Entre em contato comigo",
+    "description": "Por favor, entre em contato diretamente pelo <link>ngoanhvu110293@gmail.com</link> ou através deste formulário.",
+    "success": "Email enviado com sucesso!",
+    "yourEmail": "Seu email",
+    "yourMessage": "Sua mensagem"
+  }
+}

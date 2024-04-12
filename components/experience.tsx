@@ -1,27 +1,41 @@
 "use client";
 
-import React from "react";
-import SectionHeading from "./section-heading";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
-import { experiencesData } from "@/lib/data";
-import { useSectionInView } from "@/lib/hooks";
-import { useTheme } from "@/context/theme-context";
+import React from 'react';
+import { useTranslations } from "next-intl";
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 
-export default function Experience() {
-  const { ref } = useSectionInView("Experience");
+import { Experience as ExperienceType } from '@/types';
+import { useSectionInView } from '@/hooks/use-section-in-view';
+import { useTheme } from '@/hooks/use-theme';
+
+import SectionHeading from "@/components/section-heading";
+
+export default function Experience({
+  locale
+}: {
+  locale: string
+}) {
+  const { ref } = useSectionInView(locale === 'vn' ? "Experiência" : "Experience");
   const { theme } = useTheme();
+  const t = useTranslations('ExperienceSection');
+
+  let experiencesData;
+
+  if (locale === 'vn') {
+    experiencesData = require("@/lib/data-vn").experiencesData;
+  } else  {
+    experiencesData = require("@/lib/data").experiencesData;
+  }
 
   return (
-    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
-      <SectionHeading>My experience</SectionHeading>
+    <section ref={ref} id="experience" className="scroll-mt-28 mb-28 sm:mb-40">
+      <SectionHeading>{t('heading')}</SectionHeading>
       <VerticalTimeline lineColor="">
-        {experiencesData.map((item, index) => (
+        {experiencesData.map((item: ExperienceType, index: number) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
+              visible={true}
               contentStyle={{
                 background:
                   theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
@@ -54,5 +68,5 @@ export default function Experience() {
         ))}
       </VerticalTimeline>
     </section>
-  );
+  )
 }
