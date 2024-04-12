@@ -1,4 +1,4 @@
-![Uploading Screenshot 2024-04-12 at 11.29.35 AM.png…]()
+![Screenshot 2024-04-12 at 11 29 35 AM](https://github.com/vungoanh/portfolio/assets/102856506/a5e32093-e345-410c-aa95-52eff6042024)
 
 ## What you will learn
 
