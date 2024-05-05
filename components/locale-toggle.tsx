@@ -37,13 +37,13 @@ export default function LocaleToggle() {
     >
       {locale === 'vn' ? <Image
           src="/vn-icon.png"
-          alt="Vu Ngo"
+          alt="VN"
           width="48"
           height="48"
           quality="95"
       /> : <Image
           src="/us-icon.png"
-          alt="Vu Ngo"
+          alt="US"
           width="48"
           height="48"
           quality="95"

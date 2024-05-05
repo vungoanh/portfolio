@@ -16,7 +16,7 @@ export default function Experience({
 }: {
   locale: string
 }) {
-  const { ref } = useSectionInView(locale === 'vn' ? "Experiência" : "Experience");
+  const { ref } = useSectionInView(locale === 'vn' ? "Kinh nghiệm" : "Experience");
   const { theme } = useTheme();
   const t = useTranslations('ExperienceSection');
 
@@ -54,7 +54,7 @@ export default function Experience({
               icon={item.icon}
               iconStyle={{
                 background:
-                  theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
+                  theme === "light" ? "white" : "black",
                 fontSize: "1.5rem",
               }}
             >

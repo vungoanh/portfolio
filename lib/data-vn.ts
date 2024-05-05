@@ -9,55 +9,55 @@ import postsCommentsApi from "@/public/post-comments-api.png";
 
 export const links = [
   {
-    name: "Home",
+    name: "Trang chủ",
     hash: "#home",
   },
   {
-    name: "Sobre",
+    name: "Về tôi",
     hash: "#about",
   },
   {
-    name: "Projetos",
+    name: "Dự án",
     hash: "#projects",
   },
   {
-    name: "Skills",
+    name: "Kỹ năng",
     hash: "#skills",
   },
   {
-    name: "Experiência",
+    name: "Kinh nghiệm",
     hash: "#experience",
   },
   {
-    name: "Contato",
+    name: "Liên hệ",
     hash: "#contact",
   },
 ] as const;
 
 export const experiencesData = [
   {
-    title: "Estagiário em Desenvolvimento de Software",
-    location: "Juiz de Fora, MG",
+    title: "Lập trình viên",
+    location: "Fast Boy Marketing, TP.Hồ Chí Minh",
     description:
-      "Fui estagiário na Thomson Reuters por quase 2 anos, trabalhando com .NET, C# e SQL Server. Lá, eu trabalhei na resolução de bugs relatados pelos clientes e no desenvolvimento de novos recursos no sistema.",
+      "Lập trình viên tại Fast Boy Marketing, làm việc với React. Ở đó, tôi làm việc để giải quyết các lỗi do khách hàng báo cáo và phát triển các tính năng mới trong hệ thống.",
     icon: React.createElement(CgWorkAlt),
-    date: "2021 - 2023",
+    date: "2021 - Hiện tại",
   },
   {
-    title: "Bacharel em Ciência da Computação",
-    location: "Universidade Federal de Juiz de Fora, MG",
+    title: "Cử nhân Khoa học Máy tính",
+    location: "Học viện Bưu chính viễn thông",
     description:
-      "Graduado recentemente em Ciência da Computação.",
+      "Vừa tốt nghiệp chuyên ngành Khoa học Máy tính.",
     icon: React.createElement(LuGraduationCap),
-    date: "2018 - 2023",
+    date: "2018 - 2022",
   },
   {
-    title: "Curso Técnico em Informática",
-    location: "Instituto Federal de Educação, Ciência e Tecnologia do Sudeste de Minas Gerais - Campus Juiz de Fora, MG",
+    title: "Khóa học CNTT",
+    location: "Trường THPT Bùi Thị Xuân, TP.Phan Thiết",
     description:
-      "Obtive um curso técnico em Informática durante o ensino médio.",
+      "Tôi đã theo học một khóa về CNTT khi còn học trung học.",
     icon: React.createElement(LuGraduationCap),
-    date: "2015 - 2017",
+    date: "2009 - 2010",
   },
 ] as const;
 
