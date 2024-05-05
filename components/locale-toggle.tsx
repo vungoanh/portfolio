@@ -36,13 +36,13 @@ export default function LocaleToggle() {
       disabled={isPending}
     >
       {locale === 'vn' ? <Image
-          src="/vn-icon.png"
+          src="/vn-flag.svg"
           alt="VN"
           width="48"
           height="48"
           quality="95"
       /> : <Image
-          src="/us-icon.png"
+          src="/us-flag.png"
           alt="US"
           width="48"
           height="48"
