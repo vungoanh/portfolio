@@ -17,7 +17,7 @@ export default function Contact({
   locale: string
 }) {
 
-  const { ref } = useSectionInView(locale === 'vn' ? "Contato" : "Contact");
+  const { ref } = useSectionInView(locale === 'vn' ? "Liên hệ" : "Contact");
   const t = useTranslations('ContactSection');
 
   return (

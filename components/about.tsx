@@ -13,7 +13,7 @@ export default function About({
 }: {
   locale: string
 }) {
-  const { ref } = useSectionInView(locale === 'vn' ? "Sobre" : "About");
+  const { ref } = useSectionInView(locale === 'vn' ? "Về tôi" : "About");
 
   const t = useTranslations('AboutSection');
 

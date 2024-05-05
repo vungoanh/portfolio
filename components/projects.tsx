@@ -14,7 +14,7 @@ export default function Projects({
 }: {
   locale: string
 }) {
-  const { ref } = useSectionInView(locale === 'vn' ? "Projetos" : "Projects");
+  const { ref } = useSectionInView(locale === 'vn' ? "Dự án" : "Projects");
 
   const t = useTranslations('ProjectsSection');
 
