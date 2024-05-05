@@ -57,7 +57,7 @@ export default function LocaleLayout({
               <Header locale={locale}/>
               {children}
               <Footer />
-              <Toaster position="top-right"/>
+              <Toaster position="top-center"/>
             </ActiveSectionContextProvider>
             <ThemeToggle />
             <LocaleToggle />

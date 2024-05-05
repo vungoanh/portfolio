@@ -1,42 +1,42 @@
 {
   "LocaleLayout": {
-    "title": "Vu Ngo | Portfolio Pessoal"
+    "title": "Vu Ngo | Danh mục cá nhân"
   },
   "LocaleSwitcher": {
-    "label": "Change language",
-    "locale": "{locale, select, en {🇺🇸 English} vn {🇧🇷 Português} other {Unknown}}"
+    "label": "Thay đổi ngôn ngữ",
+    "locale": "{ngôn ngữ, select, en {🇺🇸 English} vn {🇧🇷 Português} khác {Unknown}}"
   },
   "Footer": {
-    "copyright": "<small>© {year} Vu Ngo. Todos direitos reservados.</small>",
-    "about": "<bold>Sobre este website:</bold> feito com Next.js, TypeScript, Tailwind CSS, Framer Motion, React Email & Resend, hospedagem Vercel."
+    "copyright": "<small>© {năm} Vu Ngo. Đã đăng ký Bản quyền.</small>",
+    "about": "<bold>Giới thiệu về trang web này:</bold> thực hiện bởi Next.js, TypeScript, Tailwind CSS, Framer Motion, React Email & Resend, Vercel."
   },
   "SubmitButton": {
-    "submit": "Enviar"
+    "submit": "Gửi"
   },
   "IntroSection": {
-    "intro": "<bold>Olá, eu sou o Vu Ngo.</bold> Sou um desenvolvedor <bold>full-stack</bold> júnior com <bold>2 anos</bold> de experiência. Eu gosto de desenvolver <italic>sites & apps</italic>.",
-    "contactMeHere": "Entre em contato aqui",
-    "downloadCV": "Baixar CV"
+    "intro": "Xin chào, tôi là Vu Ngo. Tôi là lập trình viên front-end với 2 năm kinh nghiệm. Tôi thích lập trình <italic>trang web & ứng dựng</italic>.",
+    "contactMeHere": "Hãy liên lạc ở đây",
+    "downloadCV": "Tải CV xuống"
   },
   "AboutSection": {
-    "heading": "Sobre mim",
-    "aboutMe": "Recentemente me formei em <medium>Ciência da Computação</medium> com conhecimentos em linguagens de programação, bancos de dados e desenvolvimento web. <underline>Tenho experiência em ambiente de manutenção e suporte</underline>, trabalhando na resolução de bugs de sistema. <underline>Habilidade para resolver problemas e aprender rápido</underline>. Atualmente, tenho estudado e desenvolvido <medium>projetos Full-stack</medium> com diversas tecnologias como <medium>React, Next.js, Typescript e Tailwind</medium>. Estou procurando uma <medium>posição em tempo integral</medium> como desenvolvedor de software.",
+    "heading": "Về tôi",
+    "aboutMe": "Gần đây tôi đã tốt nghiệp <medium>Ciência da Computação</medium> com conhecimentos em linguagens de programação, bancos de dados e desenvolvimento web. <underline>Tenho experiência em ambiente de manutenção e suporte</underline>, trabalhando na resolução de bugs de sistema. <underline>Habilidade para resolver problemas e aprender rápido</underline>. Atualmente, tenho estudado e desenvolvido <medium>projetos Full-stack</medium> com diversas tecnologias como <medium>React, Next.js, Typescript e Tailwind</medium>. Estou procurando uma <medium>posição em tempo integral</medium> como desenvolvedor de software.",
     "hobbies": "<italic>Quando não estou codificando</italic>, gosto de jogar videogames, assistir filmes e ler. Também gosto de <bold>cozinhar</bold>. Atualmente, meus pratos principais são <bold>pizzas e um bom churrasco</bold>. Também gosto de ir à academia para me manter ativo."
   },
   "ProjectsSection": {
-    "heading": "Meus projetos"
+    "heading": "Những dự án của tôi"
   },
   "SkillsSection": {
-    "heading": "Minhas habilidades"
+    "heading": "Kĩ năng của tôi"
   },
   "ExperienceSection": {
-    "heading": "Minha experiência"
+    "heading": "Kinh nghiệm của tôi"
   },
   "ContactSection": {
-    "heading": "Entre em contato comigo",
-    "description": "Por favor, entre em contato diretamente pelo <link>ngoanhvu110293@gmail.com</link> ou através deste formulário.",
-    "success": "Email enviado com sucesso!",
-    "yourEmail": "Seu email",
-    "yourMessage": "Sua mensagem"
+    "heading": "Liên hệ với tôi",
+    "description": "Hãy liên hệ với tôi tại <link>ngoanhvu110293@gmail.com</link> hoặc thông qua biểu mẫu này.",
+    "success": "Email đã được gửi thành công!",
+    "yourEmail": "Email của bạn",
+    "yourMessage": "Tin nhắn của bạn"
   }
 }
