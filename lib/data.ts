@@ -36,25 +36,25 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Lập trình viên",
-    location: "Fast Boy Marketing, TP.Hồ Chí Minh",
+    title: "Developer",
+    location: "Fast Boy Marketing, Ho Chi Minh City",
     description:
-        "Lập trình viên tại Fast Boy Marketing, làm việc với React. Ở đó, tôi làm việc để giải quyết các lỗi do khách hàng báo cáo và phát triển các tính năng mới trong hệ thống.",
+        "Programmer at Fast Boy Marketing, working with React. There, I worked on resolving customer reporting issues and developing new features in the system.",
     icon: React.createElement(CgWorkAlt),
-    date: "2021 - Hiện tại",
+    date: "2021 - Now",
   },
   {
-    title: "Cử nhân Khoa học Máy tính",
-    location:"Học viện Bưu chính viễn thông",
-    description: "Vừa tốt nghiệp chuyên ngành Khoa học Máy tính.",
+    title: "Bachelor of Computer Science",
+    location:"Posts and Telecommunications Institute of Technology",
+    description: "Just graduated with a major in Computer Science.",
     icon: React.createElement(LuGraduationCap),
     date: "2018 - 2022",
   },
   {
-    title: "Khóa học CNTT",
-    location: "Trường THPT Bùi Thị Xuân, TP.Phan Thiết",
+    title: "IT course",
+    location: "Bui Thi Xuan High School, Phan Thiet City",
     description:
-        "Tôi đã theo học một khóa về CNTT khi còn học trung học.",
+        "I took an IT course when I was in high school.",
     icon: React.createElement(LuGraduationCap),
     date: "2009 - 2010",
   },
