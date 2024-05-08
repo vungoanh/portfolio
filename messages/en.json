@@ -4,7 +4,7 @@
   },
   "LocaleSwitcher": {
     "label": "Change language",
-    "locale": "{locale, select, en {🇺🇸 English} vn {🇧🇷 Português} other {Unknown}}"
+    "locale": "{locale, select, en {🇺🇸 English} vn {Vietnamese} other {Unknown}}"
   },
   "Footer": {
     "copyright": "<small>© {year} Vu Ngo. All rights reserved.</small>",
@@ -34,7 +34,7 @@
   },
   "ContactSection": {
     "heading": "Contact me",
-    "description": "Please contact me directly at <link>ngoanhvu110293@hotmail.com</link> or through this form.",
+    "description": "Please contact me directly at <link>ngoanhvu110293@gmail.com</link> or through this form.",
     "success": "Email sent successfully!",
     "yourEmail": "Your email",
     "yourMessage": "Your message"
