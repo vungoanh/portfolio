@@ -4,11 +4,11 @@
   },
   "LocaleSwitcher": {
     "label": "Thay đổi ngôn ngữ",
-    "locale": "{ngôn ngữ, select, en {🇺🇸 English} vn {🇧🇷 Português} khác {Unknown}}"
+    "locale": "{ngôn ngữ, select, en {🇺🇸 Tiếng Anh} vn {🇧🇷 Tiếng Việt} khác {Unknown}}"
   },
   "Footer": {
-    "copyright": "<small>© {năm} Vu Ngo. Đã đăng ký Bản quyền.</small>",
-    "about": "<bold>Giới thiệu về trang web này:</bold> thực hiện bởi Next.js, TypeScript, Tailwind CSS, Framer Motion, React Email & Resend, Vercel."
+    "copyright": "<small>© {year} Vu Ngo. Đã đăng ký bản quyền.</small>",
+    "about": "<bold>Giới thiệu về trang web này:</bold> thực hiện bởi Next.js, TypeScript, Tailwind CSS, Framer Motion, React Email & Resend, Vercel hosting."
   },
   "SubmitButton": {
     "submit": "Gửi"
